@@ -1,0 +1,247 @@
+/*Gelerell styling*/
+:root {
+    --primary-color:#38bd89;
+    --secondary-color:#B0E0E6;
+    --primary-light-color:;
+    --alert-color:#c5313a;
+    --standard-font-family:'Merriweather', serif;
+    --standard-font-size:1.1rem;
+}
+
+html{
+    font-family: 'Merriweather', serif;
+    font-size: var(--standard-font-size);
+}
+
+body h1, 
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-weight: 900;
+}
+
+body {
+    background-color: var(--primary-color);
+    padding: 20px;
+    font-weight: 300;
+}
+
+/*headings*/
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1,5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+/*header*/
+header {
+    height: 100px;
+    display: grid; 
+    background: url("./apples_bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+@media screen and (min-width: 600px) {
+    header {
+        grid-template-columns: 1fr 2fr;
+    }
+}
+
+.App { 
+    display: none;
+}
+
+/*sök box*/
+input[type="search"] {
+    border-radius: 10px;
+    padding: 20px 20px 20px 50px;
+    font-family: var(--standard-font-family);
+    font-size: var(--standard-font-size);
+    border: 2px solid var(--primary-color);
+    width: 100%;
+    background-image: url("./zoom.svg");
+    background-repeat: no-repeat;
+    background-size: 22px auto;
+    background-position: 15px 50%;
+    background-color: unset;
+}
+
+input[type="search"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/*Layout*/
+.main-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+#main-content-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+aside {
+    background-color: powderblue;
+    padding: 20px;
+}
+
+/*Form*/
+input:valid {    
+    border-color: 1px solid var(--secondary-color);
+}
+
+input:invalid {
+    border-color: 2px solid var(--alert-color);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"],
+input[type="date"],
+input[type="time"],
+input[type="password"],
+input[type="color"],
+input[type="number"],
+textarea,
+select {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+form label {
+    margin: 10px 0;
+}
+
+form:after {
+    border-bottom: 3px solid #000;
+}
+
+form[name="kontakta-oss"] textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+}
+form[name="kontakta-oss"] input[type="submit"] {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+/*navigation*/
+
+nav li {
+    display: inline-block;
+    border-bottom: black;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: aqua;
+}
+
+#navigation {
+    background-color: powderblue;
+}
+
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        margin: 20px 0;
+    }
+    nav li {
+        border-bottom: 1px solid black;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="submit"],
+    input[type="date"],
+    input[type="time"],
+    input[type="password"],
+    input[type="color"],
+    input[type="number"],
+    textarea, 
+    select {
+        padding: 10px;
+        display: block;
+        margin: 5px 0;   
+    }
+        
+    form label {
+        margin: 5px 0;
+
+    }
+    .logo-container {
+        display: none;
+    }
+    
+    .App{
+        display: center;
+    }
+
+    #main-content-container {
+        display: block;
+    }
+}
+
+/*footer*/
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    background-color: powderblue;
+}
+
+.footer-box {
+    flex: 1;
+}
+
+/*links*/
+a, 
+a:hover, 
+a:visited,
+a:active {
+    color:orange;
+}
+
+a:hover {
+    border-bottom: black;
+}
+
+a:active {
+    font-size: 1rem;
+}
+

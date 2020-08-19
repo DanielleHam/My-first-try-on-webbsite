@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&display=swap" rel="stylesheet">
+    <title>Danny's Frukt shop</title>
+</head>
+<body>
+    <section class="main-container">
+        <header>
+            <div class="logo-container">
+                <a href="https://en.wikipedia.org/wiki/apple">
+                    <picture> 
+                        <source media="(min-width:1000px)" srcset="apple-1024px.jpg">
+                        <img style="max-height: 100px;" src="apple-640px.jpg" alt="Bild på ett äpple" title="Ett fint äpple">
+                    </picture>
+                </a> 
+            </div>
+            <div class="search-contianer"><input type="search" placeholder="Sök..."/> </div>
+            <li class="App"><a href="#">Ladda ner våran app</a> </li>
+        </header>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="order.html">Order from us</a> </li>
+                <li><a href="recipies.html">Recipies</a> </li>
+                <li><a href="about.html">About us</a> </li>
+                <li><a class="active" href="contact.html">Contact</a> </li>
+            </ul>
+        </nav>   
+        <article> 
+            <div>
+            <h1>Welcome To Danny's Frukt shop</h1>
+
+            <h2>Kontakta oss gärna</h2>
+            <p>Fyll i formuläret för att lättast komma i kontakt med oss! </p>
+            </div>
+
+            <form name="kontakta-oss" method="GET" action="contact.html">
+                <label for="förnamn, efternamn">Skriv ditt namn:</label><br>
+                <input type="text" id="förnamn" name="Förnamn" required placeholder="Förnamn">
+                <input type="text" id="efternamn" name="Efternamn" required placeholder="Efternamn"> <br>
+                <label for="Kontakt"> Kontakt uppgifter: </label> <br>
+                <input type="email" id="Kontakt" required placeholder="Email"> <br>
+                <label for="textbox">Ditt meddenade (max 1000tecken)</label> <br>
+                <textarea id="textbox" name="textbox" maxlength="1000"></textarea> <br>
+
+
+                <input type="submit" id="submit" value="Send message">
+            </form>
+        </article>
+    <footer class="footer-container">
+        <div class="footer-box">&copy; Danielle Hamrin</div>
+        <div class="footer-box">Adress:<br> Strövägen 1<br> 291 95 Färlöv</div>
+        <div class="footer-box">Följ oss på Facebook, Twitter och Instagram</div>
+    </footer>
+</section>
+</body>
+</html>         
+                
